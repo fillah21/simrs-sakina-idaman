@@ -1,0 +1,192 @@
+[
+    {
+        "id": 1,
+        "nama_provinsi": "Aceh (NAD)",
+        "kode_provinsi": "11"
+    },
+    {
+        "id": 2,
+        "nama_provinsi": "Bali",
+        "kode_provinsi": "51"
+    },
+    {
+        "id": 3,
+        "nama_provinsi": "Banten",
+        "kode_provinsi": "36"
+    },
+    {
+        "id": 4,
+        "nama_provinsi": "Bengkulu",
+        "kode_provinsi": "17"
+    },
+    {
+        "id": 5,
+        "nama_provinsi": "DI Yogyakarta",
+        "kode_provinsi": "34"
+    },
+    {
+        "id": 6,
+        "nama_provinsi": "DKI Jakarta",
+        "kode_provinsi": "31"
+    },
+    {
+        "id": 7,
+        "nama_provinsi": "Gorontalo",
+        "kode_provinsi": "75"
+    },
+    {
+        "id": 8,
+        "nama_provinsi": "Jambi",
+        "kode_provinsi": "15"
+    },
+    {
+        "id": 9,
+        "nama_provinsi": "Jawa Barat",
+        "kode_provinsi": "32"
+    },
+    {
+        "id": 10,
+        "nama_provinsi": "Jawa Tengah",
+        "kode_provinsi": "33"
+    },
+    {
+        "id": 11,
+        "nama_provinsi": "Jawa Timur",
+        "kode_provinsi": "35"
+    },
+    {
+        "id": 12,
+        "nama_provinsi": "Kalimantan Barat",
+        "kode_provinsi": "61"
+    },
+    {
+        "id": 13,
+        "nama_provinsi": "Kalimantan Selatan",
+        "kode_provinsi": "63"
+    },
+    {
+        "id": 14,
+        "nama_provinsi": "Kalimantan Tengah",
+        "kode_provinsi": "62"
+    },
+    {
+        "id": 15,
+        "nama_provinsi": "Kalimantan Timur",
+        "kode_provinsi": "64"
+    },
+    {
+        "id": 16,
+        "nama_provinsi": "Kalimantan Utara",
+        "kode_provinsi": "65"
+    },
+    {
+        "id": 17,
+        "nama_provinsi": "Kepulauan Bangka Belitung",
+        "kode_provinsi": "19"
+    },
+    {
+        "id": 18,
+        "nama_provinsi": "Kepulauan Riau",
+        "kode_provinsi": "21"
+    },
+    {
+        "id": 19,
+        "nama_provinsi": "Lampung",
+        "kode_provinsi": "18"
+    },
+    {
+        "id": 20,
+        "nama_provinsi": "Maluku",
+        "kode_provinsi": "81"
+    },
+    {
+        "id": 21,
+        "nama_provinsi": "Maluku Utara",
+        "kode_provinsi": "82"
+    },
+    {
+        "id": 22,
+        "nama_provinsi": "Nusa Tenggara Barat (NTB)",
+        "kode_provinsi": "52"
+    },
+    {
+        "id": 23,
+        "nama_provinsi": "Nusa Tenggara Timur (NTT)",
+        "kode_provinsi": "53"
+    },
+    {
+        "id": 24,
+        "nama_provinsi": "Papua",
+        "kode_provinsi": "91"
+    },
+    {
+        "id": 25,
+        "nama_provinsi": "Papua Barat",
+        "kode_provinsi": "92"
+    },
+    {
+        "id": 26,
+        "nama_provinsi": "Papua Barat Daya",
+        "kode_provinsi": "92"
+    },
+    {
+        "id": 27,
+        "nama_provinsi": "Papua Pegunungan",
+        "kode_provinsi": "95"
+    },
+    {
+        "id": 28,
+        "nama_provinsi": "Papua Selatan",
+        "kode_provinsi": "93"
+    },
+    {
+        "id": 29,
+        "nama_provinsi": "Papua Tengah",
+        "kode_provinsi": "94"
+    },
+    {
+        "id": 30,
+        "nama_provinsi": "Riau",
+        "kode_provinsi": "14"
+    },
+    {
+        "id": 31,
+        "nama_provinsi": "Sulawesi Barat",
+        "kode_provinsi": "76"
+    },
+    {
+        "id": 32,
+        "nama_provinsi": "Sulawesi Selatan",
+        "kode_provinsi": "73"
+    },
+    {
+        "id": 33,
+        "nama_provinsi": "Sulawesi Tengah",
+        "kode_provinsi": "72"
+    },
+    {
+        "id": 34,
+        "nama_provinsi": "Sulawesi Tenggara",
+        "kode_provinsi": "74"
+    },
+    {
+        "id": 35,
+        "nama_provinsi": "Sulawesi Utara",
+        "kode_provinsi": "71"
+    },
+    {
+        "id": 36,
+        "nama_provinsi": "Sumatera Barat",
+        "kode_provinsi": "13"
+    },
+    {
+        "id": 37,
+        "nama_provinsi": "Sumatera Selatan",
+        "kode_provinsi": "16"
+    },
+    {
+        "id": 38,
+        "nama_provinsi": "Sumatera Utara",
+        "kode_provinsi": "12"
+    }
+]

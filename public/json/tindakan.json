@@ -1,0 +1,122 @@
+[
+    {
+        "layanan_id": 1,
+        "kode_tindakan": "TDK001",
+        "nama_tindakan": "PEMERIKSAAN TEKANAN DARAH",
+        "harga_tindakan": 25000
+    },
+    {
+        "layanan_id": 1,
+        "kode_tindakan": "TDK002",
+        "nama_tindakan": "PEMERIKSAAN SUHU TUBUH",
+        "harga_tindakan": 20000
+    },
+    {
+        "layanan_id": 2,
+        "kode_tindakan": "TDK003",
+        "nama_tindakan": "KONSULTASI SPESIALIS ANAK - PEMERIKSAAN FISIK",
+        "harga_tindakan": 50000
+    },
+    {
+        "layanan_id": 2,
+        "kode_tindakan": "TDK004",
+        "nama_tindakan": "KONSULTASI SPESIALIS ANAK - PEMERIKSAAN TUMBUH KEMBANG",
+        "harga_tindakan": 75000
+    },
+    {
+        "layanan_id": 3,
+        "kode_tindakan": "TDK005",
+        "nama_tindakan": "KONSULTASI PENYAKIT DALAM - PEMERIKSAAN UMUM",
+        "harga_tindakan": 60000
+    },
+    {
+        "layanan_id": 3,
+        "kode_tindakan": "TDK006",
+        "nama_tindakan": "KONSULTASI PENYAKIT DALAM - TES DARAH DASAR",
+        "harga_tindakan": 100000
+    },
+    {
+        "layanan_id": 4,
+        "kode_tindakan": "TDK007",
+        "nama_tindakan": "PENGAMBILAN SAMPEL DARAH",
+        "harga_tindakan": 30000
+    },
+    {
+        "layanan_id": 4,
+        "kode_tindakan": "TDK008",
+        "nama_tindakan": "PEMERIKSAAN KADAR GULA DARAH",
+        "harga_tindakan": 50000
+    },
+    {
+        "layanan_id": 5,
+        "kode_tindakan": "TDK009",
+        "nama_tindakan": "FOTO RONTGEN DADA",
+        "harga_tindakan": 150000
+    },
+    {
+        "layanan_id": 5,
+        "kode_tindakan": "TDK010",
+        "nama_tindakan": "FOTO RONTGEN TULANG",
+        "harga_tindakan": 175000
+    },
+    {
+        "layanan_id": 6,
+        "kode_tindakan": "TDK011",
+        "nama_tindakan": "PEMASANGAN INFUS",
+        "harga_tindakan": 50000
+    },
+    {
+        "layanan_id": 6,
+        "kode_tindakan": "TDK012",
+        "nama_tindakan": "PENGUKURAN TEKANAN DARAH HARIAN",
+        "harga_tindakan": 20000
+    },
+    {
+        "layanan_id": 9,
+        "kode_tindakan": "TDK013",
+        "nama_tindakan": "PENGAWASAN PASIEN DI ICU PER JAM",
+        "harga_tindakan": 200000
+    },
+    {
+        "layanan_id": 9,
+        "kode_tindakan": "TDK014",
+        "nama_tindakan": "PEMASANGAN VENTILATOR",
+        "harga_tindakan": 300000
+    },
+    {
+        "layanan_id": 12,
+        "kode_tindakan": "TDK015",
+        "nama_tindakan": "PENJAHITAN LUKA RINGAN",
+        "harga_tindakan": 100000
+    },
+    {
+        "layanan_id": 12,
+        "kode_tindakan": "TDK016",
+        "nama_tindakan": "STABILISASI TULANG PATAH",
+        "harga_tindakan": 250000
+    },
+    {
+        "layanan_id": 13,
+        "kode_tindakan": "TDK017",
+        "nama_tindakan": "RESUSITASI JANTUNG PARU",
+        "harga_tindakan": 300000
+    },
+    {
+        "layanan_id": 13,
+        "kode_tindakan": "TDK018",
+        "nama_tindakan": "INTUBASI DARURAT",
+        "harga_tindakan": 400000
+    },
+    {
+        "layanan_id": 14,
+        "kode_tindakan": "TDK019",
+        "nama_tindakan": "OBSERVASI PASIEN DARURAT PER JAM",
+        "harga_tindakan": 50000
+    },
+    {
+        "layanan_id": 14,
+        "kode_tindakan": "TDK020",
+        "nama_tindakan": "PENGAWASAN KONDISI PASIEN",
+        "harga_tindakan": 75000
+    }
+]

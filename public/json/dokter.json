@@ -1,0 +1,76 @@
+[
+    {
+        "layanan_id": 1,
+        "kode_dokter": "DR001",
+        "nama_dokter": "Muhammad Sumbul",
+        "hari_praktek": ["Senin", "Kamis", "Jumat"],
+        "jam_praktek": [
+            "08:00:00-14:00:00",
+            "08:00:00-14:00:00",
+            "08:00:00-14:00:00"
+        ]
+    },
+    {
+        "layanan_id": 2,
+        "kode_dokter": "DR002",
+        "nama_dokter": "Dewi Rahmawati",
+        "hari_praktek": ["Selasa", "Rabu"],
+        "jam_praktek": ["08:00:00-13:00:00", "08:00:00-13:00:00"]
+    },
+    {
+        "layanan_id": 3,
+        "kode_dokter": "DR003",
+        "nama_dokter": "Rizal Alamsyah",
+        "hari_praktek": ["Senin", "Jumat"],
+        "jam_praktek": ["13:00:00-17:00:00", "13:00:00-17:00:00"]
+    },
+    {
+        "layanan_id": 4,
+        "kode_dokter": "DR004",
+        "nama_dokter": "Andi Pratama",
+        "hari_praktek": ["Rabu", "Kamis"],
+        "jam_praktek": ["09:00:00-14:00:00", "09:00:00-14:00:00"]
+    },
+    {
+        "layanan_id": 5,
+        "kode_dokter": "DR005",
+        "nama_dokter": "Siti Komariah",
+        "hari_praktek": ["Sabtu"],
+        "jam_praktek": ["09:00:00-12:00:00"]
+    },
+    {
+        "layanan_id": 6,
+        "kode_dokter": "DR006",
+        "nama_dokter": "Budi Santoso",
+        "hari_praktek": ["Senin", "Selasa"],
+        "jam_praktek": ["10:00:00-15:00:00", "10:00:00-15:00:00"]
+    },
+    {
+        "layanan_id": 9,
+        "kode_dokter": "DR007",
+        "nama_dokter": "Ratna Sari",
+        "hari_praktek": ["Rabu", "Kamis"],
+        "jam_praktek": ["08:00:00-13:00:00", "08:00:00-13:00:00"]
+    },
+    {
+        "layanan_id": 12,
+        "kode_dokter": "DR008",
+        "nama_dokter": "Hendra Wijaya",
+        "hari_praktek": ["Senin", "Kamis"],
+        "jam_praktek": ["14:00:00-18:00:00", "14:00:00-18:00:00"]
+    },
+    {
+        "layanan_id": 13,
+        "kode_dokter": "DR009",
+        "nama_dokter": "Yuni Astuti",
+        "hari_praktek": ["Jumat", "Sabtu"],
+        "jam_praktek": ["08:00:00-12:00:00", "09:00:00-13:00:00"]
+    },
+    {
+        "layanan_id": 14,
+        "kode_dokter": "DR010",
+        "nama_dokter": "Faisal Akbar",
+        "hari_praktek": ["Selasa", "Rabu"],
+        "jam_praktek": ["13:00:00-17:00:00", "13:00:00-17:00:00"]
+    }
+]

@@ -1,0 +1,107 @@
+[
+    {
+        "instalasi": "RAWAT JALAN",
+        "kode_layanan": "LYN001",
+        "nama_layanan": "POLI UMUM",
+        "harga_layanan": 50000,
+        "wajib_rujukan": false
+    },
+    {
+        "instalasi": "RAWAT JALAN",
+        "kode_layanan": "LYN002",
+        "nama_layanan": "POLI SPESIALIS ANAK",
+        "harga_layanan": 75000,
+        "wajib_rujukan": true
+    },
+    {
+        "instalasi": "RAWAT JALAN",
+        "kode_layanan": "LYN003",
+        "nama_layanan": "POLI SPESIALIS PENYAKIT DALAM",
+        "harga_layanan": 85000,
+        "wajib_rujukan": true
+    },
+    {
+        "instalasi": "RAWAT JALAN",
+        "kode_layanan": "LYN004",
+        "nama_layanan": "TES LABORATORIUM",
+        "harga_layanan": 60000,
+        "wajib_rujukan": false
+    },
+    {
+        "instalasi": "RAWAT JALAN",
+        "kode_layanan": "LYN005",
+        "nama_layanan": "RADIOLOGI (RONTGEN)",
+        "harga_layanan": 100000,
+        "wajib_rujukan": true
+    },
+    {
+        "instalasi": "RAWAT INAP",
+        "kode_layanan": "LYN006",
+        "nama_layanan": "RAWAT INAP KELAS 1",
+        "harga_layanan": 300000,
+        "wajib_rujukan": true
+    },
+    {
+        "instalasi": "RAWAT INAP",
+        "kode_layanan": "LYN007",
+        "nama_layanan": "RAWAT INAP KELAS 2",
+        "harga_layanan": 200000,
+        "wajib_rujukan": true
+    },
+    {
+        "instalasi": "RAWAT INAP",
+        "kode_layanan": "LYN008",
+        "nama_layanan": "RAWAT INAP KELAS 3",
+        "harga_layanan": 150000,
+        "wajib_rujukan": true
+    },
+    {
+        "instalasi": "RAWAT INAP",
+        "kode_layanan": "LYN009",
+        "nama_layanan": "RUANG ICU",
+        "harga_layanan": 750000,
+        "wajib_rujukan": true
+    },
+    {
+        "instalasi": "RAWAT INAP",
+        "kode_layanan": "LYN010",
+        "nama_layanan": "RUANG NICU",
+        "harga_layanan": 1000000,
+        "wajib_rujukan": true
+    },
+    {
+        "instalasi": "RAWAT INAP",
+        "kode_layanan": "LYN011",
+        "nama_layanan": "PERAWATAN ISOLASI",
+        "harga_layanan": 500000,
+        "wajib_rujukan": true
+    },
+    {
+        "instalasi": "IGD",
+        "kode_layanan": "LYN012",
+        "nama_layanan": "PENANGANAN KECELAKAAN",
+        "harga_layanan": 750000,
+        "wajib_rujukan": false
+    },
+    {
+        "instalasi": "IGD",
+        "kode_layanan": "LYN013",
+        "nama_layanan": "TINDAKAN RESUSITASI",
+        "harga_layanan": 1000000,
+        "wajib_rujukan": false
+    },
+    {
+        "instalasi": "IGD",
+        "kode_layanan": "LYN014",
+        "nama_layanan": "OBSERVASI PASIEN GAWAT DARURAT",
+        "harga_layanan": 250000,
+        "wajib_rujukan": false
+    },
+    {
+        "instalasi": "IGD",
+        "kode_layanan": "LYN015",
+        "nama_layanan": "TES DARAH DARURAT",
+        "harga_layanan": 100000,
+        "wajib_rujukan": false
+    }
+]
