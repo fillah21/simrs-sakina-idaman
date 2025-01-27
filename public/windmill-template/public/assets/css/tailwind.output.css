@@ -1485,6 +1485,11 @@ video {
     color: #e1effe;
     color: rgba(225, 239, 254, var(--text-opacity));
 }
+.theme-dark .dark\:text-blue-300 {
+    --text-opacity: 1;
+    color: #a4cafe;
+    /* color: rgba(225, 239, 254, var(--text-opacity)); */
+}
 .theme-dark .dark\:text-purple-300 {
     --text-opacity: 1;
     color: #cabffd;
