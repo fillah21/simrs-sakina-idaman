@@ -70,7 +70,7 @@
         <script src="https://cdn.tailwindcss.com/"></script>
 
         <script src="{{ asset('js/select2/dist/js/select2.min.js') }}"></script>
-        <script src="{{ asset('js/index.js') }}"></script>
+        <script src="{{ asset('js/helper.js') }}"></script>
         @stack('script')
     </body>
 </html>
