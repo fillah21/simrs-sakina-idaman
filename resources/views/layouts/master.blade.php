@@ -21,6 +21,8 @@
         <script src={{ asset("windmill-template/public/assets/js/init-alpine.js") }}></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <link rel="stylesheet" href="https://cdn.datatables.net/2.2.1/css/dataTables.tailwindcss.css">
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
 
         {{-- <link
             rel="stylesheet"

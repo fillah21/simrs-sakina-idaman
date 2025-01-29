@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Pasien;
 use Illuminate\Support\Facades\Auth;
 
     if (!function_exists('getNamaDepan')) {
@@ -29,6 +30,23 @@ use Illuminate\Support\Facades\Auth;
                 $hasil = $url[1];
             }
             return $hasil;
+        }
+    }
+
+    if (!function_exists('generateNoRM')) {
+        function generateNoRM()
+        {
+            $tahun = date('Y');
+            $last_data = Pasien::whereYear('created_at', $tahun)->latest('no_rm')->first();
+
+            if ($last_data) {
+                $last_number = (int)substr($last_data->no_rm, -4);
+                $new_number = $last_number + 1;
+            } else {
+                $new_number = 1;
+            }
+
+            return 'RM' . $tahun . str_pad($new_number, 4, '0', STR_PAD_LEFT);
         }
     }
 ?>

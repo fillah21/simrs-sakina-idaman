@@ -9,6 +9,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('user', Ctrl\UserController::class);
     Route::get('profil', [Ctrl\ProfileController::class, 'index'])->name('profil.index');
     Route::put('profil/{profil}', [Ctrl\ProfileController::class, 'update'])->name('profil.update');
+
+    Route::resource('pasien', Ctrl\PasienController::class);
 });
 
 require __DIR__.'/auth.php';
