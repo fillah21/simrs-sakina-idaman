@@ -9,6 +9,12 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('layouts.master');
+        $title = "Dashboard";
+        return view('layouts.master', compact('title'));
+    }
+
+    public function testing()
+    {
+        dd(getFirstUrl());
     }
 }

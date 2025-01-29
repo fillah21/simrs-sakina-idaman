@@ -9,13 +9,15 @@
         </a>
         <ul class="mt-6">
             <li class="relative px-6 py-3">
-                <span
-                    class="absolute inset-y-0 left-0 w-1 bg-blue-600 rounded-tr-lg rounded-br-lg"
-                    aria-hidden="true"
-                ></span>
+                @if (getFirstUrl() == "")
+                    <span
+                        class="absolute inset-y-0 left-0 w-1 bg-blue-600 rounded-tr-lg rounded-br-lg"
+                        aria-hidden="true"
+                    ></span>
+                @endif
                 <a
-                    class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                    href="index.html"
+                    class="inline-flex items-center w-full text-sm font-semibold @if (getFirstUrl() == "") text-gray-800 @endif transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+                    href="/"
                 >
                     <svg
                         class="w-5 h-5"
@@ -35,12 +37,20 @@
                 </a>
             </li>
         </ul>
+
         <ul>
             <li class="relative px-6 py-3">
+                @if (getFirstUrl() == "user")
+                    <span
+                        class="absolute inset-y-0 left-0 w-1 bg-blue-600 rounded-tr-lg rounded-br-lg"
+                        aria-hidden="true"
+                    ></span>
+                @endif
                 <a
-                    class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="forms.html"
+                    class="inline-flex items-center w-full text-sm font-semibold @if (getFirstUrl() == "user") text-gray-800 @endif transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="/user"
                 >
+                  
                     <svg
                         class="w-5 h-5"
                         aria-hidden="true"
@@ -51,11 +61,9 @@
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                     >
-                        <path
-                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-                        ></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                     </svg>
-                    <span class="ml-4">Forms</span>
+                    <span class="ml-4">User</span>
                 </a>
             </li>
             <li class="relative px-6 py-3">
@@ -314,13 +322,15 @@
         </a>
         <ul class="mt-6">
             <li class="relative px-6 py-3">
-                <span
-                    class="absolute inset-y-0 left-0 w-1 bg-blue-600 rounded-tr-lg rounded-br-lg"
-                    aria-hidden="true"
-                ></span>
+                @if (getFirstUrl() == "")            
+                    <span
+                        class="absolute inset-y-0 left-0 w-1 bg-blue-600 rounded-tr-lg rounded-br-lg"
+                        aria-hidden="true"
+                    ></span>
+                @endif
                 <a
-                    class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
-                    href="index.html"
+                    class="inline-flex items-center w-full text-sm font-semibold @if (getFirstUrl() == "") text-gray-800 @endif transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+                    href="/"
                 >
                     <svg
                         class="w-5 h-5"
@@ -342,9 +352,16 @@
         </ul>
         <ul>
             <li class="relative px-6 py-3">
+                @if (getFirstUrl() == "user")            
+                    <span
+                        class="absolute inset-y-0 left-0 w-1 bg-blue-600 rounded-tr-lg rounded-br-lg"
+                        aria-hidden="true"
+                    ></span>
+                @endif
+
                 <a
-                    class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="forms.html"
+                    class="inline-flex items-center w-full text-sm font-semibold @if (getFirstUrl() == "user") text-gray-800 @endif transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="/user"
                 >
                     <svg
                         class="w-5 h-5"
