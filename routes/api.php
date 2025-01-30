@@ -18,4 +18,11 @@ Route::middleware('web')->group(function () {
     Route::post('agama', Ctrl\GetAllAgamaController::class);
     Route::post('pendidikan', Ctrl\GetAllPendidikanController::class);
     Route::post('pekerjaan', Ctrl\GetAllPekerjaanController::class);
+
+    Route::post('pasien', Ctrl\GetAllPasienController::class);
+    Route::post('instalasi', Ctrl\GetAllInstalasiController::class);
+    Route::post('layanan', Ctrl\GetAllLayananController::class);
+    Route::post('dokter', Ctrl\GetAllDokterController::class);
+    Route::post('jaminan', Ctrl\GetAllJaminanController::class);
+    Route::post('tindakan', Ctrl\GetAllTindakanController::class);
 });

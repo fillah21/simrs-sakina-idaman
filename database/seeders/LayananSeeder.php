@@ -32,6 +32,7 @@ class LayananSeeder extends Seeder
                 Layanan::create([
                     'instalasi_id' => $id_instalasi[$find_index],
                     'kode_layanan' => $layanan['kode_layanan'],
+                    'inisial_layanan' => $layanan['inisial_layanan'],
                     'nama_layanan' => $layanan['nama_layanan'],
                     'harga_layanan' => $layanan['harga_layanan'],
                     'wajib_rujukan' => $layanan['wajib_rujukan'],

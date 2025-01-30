@@ -15,6 +15,7 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->string('kode_instalasi');
             $table->string('nama_instalasi');
+            $table->boolean('is_antrian');
             $table->timestamps();
         });
     }

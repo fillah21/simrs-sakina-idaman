@@ -75,7 +75,7 @@
                 @endif
                 <a
                     class="inline-flex items-center w-full text-sm font-semibold @if (getFirstUrl() == "pasien") text-gray-800 @endif transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="pasien"
+                    href="/pasien"
                 >  
                     <svg
                         class="w-5 h-5"
@@ -94,9 +94,15 @@
                 </a>
             </li>
             <li class="relative px-6 py-3">
+                @if (getFirstUrl() == "pendaftaran")
+                    <span
+                        class="absolute inset-y-0 left-0 w-1 bg-blue-600 rounded-tr-lg rounded-br-lg"
+                        aria-hidden="true"
+                    ></span>
+                @endif
                 <a
-                    class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="charts.html"
+                    class="inline-flex items-center w-full text-sm font-semibold @if (getFirstUrl() == "pendaftaran") text-gray-800 @endif transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="/pendaftaran"
                 >
                     <svg
                         class="w-5 h-5"
@@ -108,14 +114,9 @@
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                     >
-                        <path
-                            d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
-                        ></path>
-                        <path
-                            d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-                        ></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" /> 
                     </svg>
-                    <span class="ml-4">Charts</span>
+                    <span class="ml-4">Pendaftaran</span>
                 </a>
             </li>
             <li class="relative px-6 py-3">
@@ -282,14 +283,6 @@
                 </template>
             </li>
         </ul>
-        <div class="px-6 my-6">
-            <button
-                class="flex items-center justify-between w-full px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue"
-            >
-                Create account
-                <span class="ml-2" aria-hidden="true">+</span>
-            </button>
-        </div>
     </div>
 </aside>
 
@@ -392,7 +385,7 @@
                 @endif
                 <a
                     class="inline-flex items-center w-full text-sm font-semibold @if (getFirstUrl() == "pasien") text-gray-800 @endif transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="cards.html"
+                    href="/pasien"
                 >
                     <svg
                         class="w-5 h-5"
@@ -410,9 +403,15 @@
                 </a>
             </li>
             <li class="relative px-6 py-3">
+                @if (getFirstUrl() == "pendaftaran")            
+                    <span
+                        class="absolute inset-y-0 left-0 w-1 bg-blue-600 rounded-tr-lg rounded-br-lg"
+                        aria-hidden="true"
+                    ></span>
+                @endif
                 <a
-                    class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="charts.html"
+                    class="inline-flex items-center w-full text-sm font-semibold @if (getFirstUrl() == "pendaftaran") text-gray-800 @endif transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="/pendaftaran"
                 >
                     <svg
                         class="w-5 h-5"
@@ -424,14 +423,9 @@
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                     >
-                        <path
-                            d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
-                        ></path>
-                        <path
-                            d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-                        ></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
                     </svg>
-                    <span class="ml-4">Charts</span>
+                    <span class="ml-4">Pendaftaran</span>
                 </a>
             </li>
             <li class="relative px-6 py-3">
@@ -598,13 +592,6 @@
                 </template>
             </li>
         </ul>
-        <div class="px-6 my-6">
-            <button
-                class="flex items-center justify-between px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue"
-            >
-                Create account
-                <span class="ml-2" aria-hidden="true">+</span>
-            </button>
-        </div>
+        
     </div>
 </aside>

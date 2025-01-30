@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('sip');
             $table->json('hari_praktek');
             $table->json('jam_praktek');
+            $table->boolean('is_aktif');
             $table->timestamps();
         });
     }

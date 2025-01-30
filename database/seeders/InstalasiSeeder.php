@@ -16,16 +16,19 @@ class InstalasiSeeder extends Seeder
         Instalasi::create([
             'kode_instalasi' => 'INS001',
             'nama_instalasi' => 'RAWAT JALAN',
+            'is_antrian' => true,
         ]);
 
         Instalasi::create([
             'kode_instalasi' => 'INS002',
             'nama_instalasi' => 'RAWAT INAP',
+            'is_antrian' => true,
         ]);
 
         Instalasi::create([
             'kode_instalasi' => 'INS003',
             'nama_instalasi' => 'IGD',
+            'is_antrian' => false,
         ]);
 
         echo "Instalasi Seeder Selesai \n";

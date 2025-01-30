@@ -25,7 +25,7 @@ class TindakanSeeder extends Seeder
 
         foreach($data_tindakan as $tindakan) {
             Tindakan::create([
-                'layanan_id' => $id_layanan[$tindakan['layanan_id']],
+                'layanan_id' => $id_layanan[$tindakan['layanan_id'] - 1],
                 'kode_tindakan' => $tindakan['kode_tindakan'],
                 'nama_tindakan' => $tindakan['nama_tindakan'],
                 'harga_tindakan' => $tindakan['harga_tindakan'],

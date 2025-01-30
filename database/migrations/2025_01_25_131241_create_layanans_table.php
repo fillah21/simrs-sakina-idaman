@@ -15,6 +15,7 @@ return new class extends Migration
             $table->uuid('id')->primary();
             $table->uuid('instalasi_id');
             $table->string('kode_layanan');
+            $table->string('inisial_layanan');
             $table->string('nama_layanan');
             $table->bigInteger('harga_layanan');
             $table->boolean('wajib_rujukan');

@@ -92,6 +92,21 @@ const initializeDatepicker = (inputId) => {
     });
 };
 
+const initializeDateTimePicker = (inputId) => {
+    $(inputId).datetimepicker({
+        dateFormat: "dd/mm/yy",
+        timeFormat: "HH:mm",
+        changeMonth: true,
+        changeYear: true,
+        showButtonPanel: true,
+        controlType: "select",
+        oneLine: true,
+        hourMin: 0,
+        hourMax: 23,
+        stepMinute: 1,
+    });
+};
+
 const initializeSelect2 = (
     config = {
         selectId: "",

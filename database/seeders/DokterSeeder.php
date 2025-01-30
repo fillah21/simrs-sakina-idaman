@@ -28,12 +28,13 @@ class DokterSeeder extends Seeder
 
         foreach($data_dokter as $dokter) {
             Dokter::create([
-                'layanan_id' => $id_layanan[$dokter['layanan_id']],
+                'layanan_id' => $id_layanan[$dokter['layanan_id'] - 1],
                 "kode_dokter" => $dokter['kode_dokter'],
                 "nama_dokter" => $dokter['nama_dokter'],
                 "sip" => strtoupper($faker->unique()->bothify('SIP###')),
                 "hari_praktek" => $dokter['hari_praktek'],
-                "jam_praktek" => $dokter['jam_praktek']
+                "jam_praktek" => $dokter['jam_praktek'],
+                "is_aktif" => true
             ]);
         }
 
