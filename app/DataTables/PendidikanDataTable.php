@@ -2,7 +2,7 @@
 
 namespace App\DataTables;
 
-use App\Models\Agama;
+use App\Models\Pendidikan;
 use Illuminate\Database\Eloquent\Builder as QueryBuilder;
 use Yajra\DataTables\EloquentDataTable;
 use Yajra\DataTables\Html\Builder as HtmlBuilder;
@@ -12,7 +12,7 @@ use Yajra\DataTables\Html\Editor\Editor;
 use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
 
-class AgamaDataTable extends DataTable
+class PendidikanDataTable extends DataTable
 {
     /**
      * Build the DataTable class.
@@ -41,7 +41,7 @@ class AgamaDataTable extends DataTable
                 ->filter(function ($query) {
                     if (request()->has('search') && request()->search['value'] != '') {
                         $search = request()->search['value'];
-                        $query->where('agama', 'like', "%$search%");
+                        $query->where('pendidikan', 'like', "%$search%");
                     }
                 });
     }
@@ -49,7 +49,7 @@ class AgamaDataTable extends DataTable
     /**
      * Get the query source of dataTable.
      */
-    public function query(Agama $model): QueryBuilder
+    public function query(Pendidikan $model): QueryBuilder
     {
         return $model->newQuery();
     }
@@ -60,7 +60,7 @@ class AgamaDataTable extends DataTable
     public function html(): HtmlBuilder
     {
         return $this->builder()
-                    ->setTableId('agama-table')
+                    ->setTableId('pendidikan-table')
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     //->dom('Bfrtip')
@@ -72,9 +72,9 @@ class AgamaDataTable extends DataTable
                             'processing' => '<div id="loader-overlay" class="loader-overlay"><div class="loading-table"></div></div>'
                         ],
                         'drawCallback' => 'function() {
-                            $("#agama-table thead").addClass("bg-biru")
-                            $("#agama-table thead tr th").addClass("text-white bg-biru")
-                            $("#agama-table tbody tr").addClass("border-b odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600")
+                            $("#pendidikan-table thead").addClass("bg-biru")
+                            $("#pendidikan-table thead tr th").addClass("text-white bg-biru")
+                            $("#pendidikan-table tbody tr").addClass("border-b odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600")
                         }',
                         'select' => false
                     ]);
@@ -87,7 +87,7 @@ class AgamaDataTable extends DataTable
     {
         return [
             Column::make('DT_RowIndex')->title('No.')->searchable(false)->orderable(false),
-            Column::computed('agama')->title('Agama')->label('Agama')->orderable(true),
+            Column::computed('pendidikan')->title('Pendidikan')->label('Pendidikan')->orderable(true),
             Column::computed('aksi')->orderable(false)
         ];
     }
@@ -97,6 +97,6 @@ class AgamaDataTable extends DataTable
      */
     protected function filename(): string
     {
-        return 'Agama_' . date('YmdHis');
+        return 'Pendidikan_' . date('YmdHis');
     }
 }

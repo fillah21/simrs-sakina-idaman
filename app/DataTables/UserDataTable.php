@@ -69,6 +69,7 @@ class UserDataTable extends DataTable
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     //->dom('Bfrtip')
+                    ->orderBy(1)
                     ->selectStyleSingle()
                     // ->buttons([
                     //     Button::make('excel'),
