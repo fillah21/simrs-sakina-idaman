@@ -22,6 +22,7 @@ Route::middleware('web')->group(function () {
     Route::post('pasien', Ctrl\GetAllPasienController::class);
     Route::post('instalasi', Ctrl\GetAllInstalasiController::class);
     Route::post('layanan', Ctrl\GetAllLayananController::class);
+    Route::post('layanan-full', Ctrl\GetFullLayananController::class);
     Route::post('dokter', Ctrl\GetAllDokterController::class);
     Route::post('jaminan', Ctrl\GetAllJaminanController::class);
     Route::post('tindakan', Ctrl\GetAllTindakanController::class);

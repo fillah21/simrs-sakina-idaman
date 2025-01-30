@@ -6,6 +6,7 @@ use App\Models\Layanan;
 use App\Models\Pasien;
 use App\Models\Pekerjaan;
 use App\Models\Pendaftaran;
+use App\Models\Tindakan;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 
@@ -108,6 +109,27 @@ use Illuminate\Support\Facades\Auth;
 
             if($last_data) {
                 $kode_last = $last_data->kode_jaminan;
+    
+                $number = (int)str_replace($prefix, "",$kode_last);
+    
+                $newNumber = str_pad($number + 1, 3, '0', STR_PAD_LEFT);
+            } else {
+                $newNumber = "001";
+            }
+    
+            return $prefix . $newNumber;
+        }
+    }
+    
+    if (!function_exists('generateKodeTindakan')) {
+        function generateKodeTindakan()
+        {
+            $last_data = Tindakan::all()->last();
+
+            $prefix = "TDK";
+
+            if($last_data) {
+                $kode_last = $last_data->kode_tindakan;
     
                 $number = (int)str_replace($prefix, "",$kode_last);
     

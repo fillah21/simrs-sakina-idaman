@@ -21,6 +21,7 @@ Route::middleware('auth')->group(function () {
         Route::resource('jaminan', Ctrl\JaminanController::class);
         Route::resource('instalasi', Ctrl\InstalasiController::class);
         Route::resource('layanan', Ctrl\LayananController::class);
+        Route::resource('tindakan', Ctrl\TindakanController::class);
     });
 });
 
