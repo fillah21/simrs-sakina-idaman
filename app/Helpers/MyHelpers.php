@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Instalasi;
 use App\Models\Jaminan;
 use App\Models\Layanan;
 use App\Models\Pasien;
@@ -107,6 +108,27 @@ use Illuminate\Support\Facades\Auth;
 
             if($last_data) {
                 $kode_last = $last_data->kode_jaminan;
+    
+                $number = (int)str_replace($prefix, "",$kode_last);
+    
+                $newNumber = str_pad($number + 1, 3, '0', STR_PAD_LEFT);
+            } else {
+                $newNumber = "001";
+            }
+    
+            return $prefix . $newNumber;
+        }
+    }
+
+    if (!function_exists('generateKodeInstalasi')) {
+        function generateKodeInstalasi()
+        {
+            $last_data = Instalasi::all()->last();
+
+            $prefix = "INS";
+
+            if($last_data) {
+                $kode_last = $last_data->kode_instalasi;
     
                 $number = (int)str_replace($prefix, "",$kode_last);
     

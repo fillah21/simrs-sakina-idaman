@@ -94,7 +94,7 @@ class JaminanController extends Controller
         } else {
             $data['wajib_keterangan_jaminan'] = false;
         }
-        
+
         $jaminan = Jaminan::find($id);
 
         $jaminan->update($data);
@@ -110,9 +110,9 @@ class JaminanController extends Controller
      */
     public function destroy(string $id)
     {
-        $pekerjaan = Jaminan::find($id);
+        $instalasi = Jaminan::find($id);
 
-        $pekerjaan->delete();
+        $instalasi->delete();
 
         return response()->json([
             'status' => 'success',

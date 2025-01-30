@@ -227,6 +227,32 @@
                         <span class="ml-4">Jaminan</span>
                     </a>
                 </li>
+                <li class="relative px-6 py-3">
+                    @if (getFirstUrl() == "instalasi")
+                        <span
+                            class="absolute inset-y-0 left-0 w-1 bg-blue-600 rounded-tr-lg rounded-br-lg"
+                            aria-hidden="true"
+                        ></span>
+                    @endif
+                    <a
+                        class="inline-flex items-center w-full text-sm font-semibold @if (getFirstUrl() == "instalasi") text-gray-800 @endif transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                        href="/instalasi"
+                    >
+                        <svg
+                            class="w-5 h-5"
+                            aria-hidden="true"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />                          
+                        </svg>
+                        <span class="ml-4">Instalasi</span>
+                    </a>
+                </li>
             @endif
             
         </ul>
@@ -479,6 +505,32 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />                          
                         </svg>
                         <span class="ml-4">Jaminan</span>
+                    </a>
+                </li>                
+                <li class="relative px-6 py-3">
+                    @if (getFirstUrl() == "instalasi")            
+                        <span
+                            class="absolute inset-y-0 left-0 w-1 bg-blue-600 rounded-tr-lg rounded-br-lg"
+                            aria-hidden="true"
+                        ></span>
+                    @endif
+                    <a
+                        class="inline-flex items-center w-full text-sm font-semibold @if (getFirstUrl() == "instalasi") text-gray-800 @endif transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                        href="/instalasi"
+                    >
+                        <svg
+                            class="w-5 h-5"
+                            aria-hidden="true"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z" />                          
+                        </svg>
+                        <span class="ml-4">Instalasi</span>
                     </a>
                 </li>                
             @endif
