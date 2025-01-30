@@ -35,7 +35,7 @@ class JaminanSeeder extends Seeder
         ]);
 
         Jaminan::create([
-            'kode_jaminan' => 'JMN003',
+            'kode_jaminan' => 'JMN004',
             'nama_jaminan' => 'LAIN-LAIN',
             'wajib_rujukan' => true,
             'wajib_keterangan_jaminan' => true

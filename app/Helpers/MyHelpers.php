@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Jaminan;
 use App\Models\Layanan;
 use App\Models\Pasien;
 use App\Models\Pekerjaan;
@@ -85,6 +86,27 @@ use Illuminate\Support\Facades\Auth;
 
             if($last_data) {
                 $kode_last = $last_data->kode_pekerjaan;
+    
+                $number = (int)str_replace($prefix, "",$kode_last);
+    
+                $newNumber = str_pad($number + 1, 3, '0', STR_PAD_LEFT);
+            } else {
+                $newNumber = "001";
+            }
+    
+            return $prefix . $newNumber;
+        }
+    }
+
+    if (!function_exists('generateKodeJaminan')) {
+        function generateKodeJaminan()
+        {
+            $last_data = Jaminan::all()->last();
+
+            $prefix = "JMN";
+
+            if($last_data) {
+                $kode_last = $last_data->kode_jaminan;
     
                 $number = (int)str_replace($prefix, "",$kode_last);
     

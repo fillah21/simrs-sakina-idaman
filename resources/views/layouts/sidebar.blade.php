@@ -201,6 +201,32 @@
                         <span class="ml-4">Pekerjaan</span>
                     </a>
                 </li>
+                <li class="relative px-6 py-3">
+                    @if (getFirstUrl() == "jaminan")
+                        <span
+                            class="absolute inset-y-0 left-0 w-1 bg-blue-600 rounded-tr-lg rounded-br-lg"
+                            aria-hidden="true"
+                        ></span>
+                    @endif
+                    <a
+                        class="inline-flex items-center w-full text-sm font-semibold @if (getFirstUrl() == "jaminan") text-gray-800 @endif transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                        href="/jaminan"
+                    >
+                        <svg
+                            class="w-5 h-5"
+                            aria-hidden="true"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />                          
+                        </svg>
+                        <span class="ml-4">Jaminan</span>
+                    </a>
+                </li>
             @endif
             
         </ul>
@@ -427,6 +453,32 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />                          
                         </svg>
                         <span class="ml-4">Pekerjaan</span>
+                    </a>
+                </li>                
+                <li class="relative px-6 py-3">
+                    @if (getFirstUrl() == "jaminan")            
+                        <span
+                            class="absolute inset-y-0 left-0 w-1 bg-blue-600 rounded-tr-lg rounded-br-lg"
+                            aria-hidden="true"
+                        ></span>
+                    @endif
+                    <a
+                        class="inline-flex items-center w-full text-sm font-semibold @if (getFirstUrl() == "jaminan") text-gray-800 @endif transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+                        href="/jaminan"
+                    >
+                        <svg
+                            class="w-5 h-5"
+                            aria-hidden="true"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />                          
+                        </svg>
+                        <span class="ml-4">Jaminan</span>
                     </a>
                 </li>                
             @endif

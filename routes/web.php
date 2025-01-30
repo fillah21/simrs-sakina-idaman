@@ -18,6 +18,7 @@ Route::middleware('auth')->group(function () {
         Route::resource('user', Ctrl\UserController::class);
         Route::resource('pendidikan', Ctrl\PendidikanController::class);
         Route::resource('pekerjaan', Ctrl\PekerjaanController::class);
+        Route::resource('jaminan', Ctrl\JaminanController::class);
     });
 });
 
