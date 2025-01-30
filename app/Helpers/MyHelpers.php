@@ -2,6 +2,7 @@
 
 use App\Models\Layanan;
 use App\Models\Pasien;
+use App\Models\Pekerjaan;
 use App\Models\Pendaftaran;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
@@ -71,6 +72,27 @@ use Illuminate\Support\Facades\Auth;
                 $newNumber = '001';
             }
 
+            return $prefix . $newNumber;
+        }
+    }
+
+    if (!function_exists('generateKodePekerjaan')) {
+        function generateKodePekerjaan()
+        {
+            $last_data = Pekerjaan::all()->last();
+
+            $prefix = "PKR";
+
+            if($last_data) {
+                $kode_last = $last_data->kode_pekerjaan;
+    
+                $number = (int)str_replace($prefix, "",$kode_last);
+    
+                $newNumber = str_pad($number + 1, 3, '0', STR_PAD_LEFT);
+            } else {
+                $newNumber = "001";
+            }
+    
             return $prefix . $newNumber;
         }
     }
