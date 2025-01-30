@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers as Ctrl;
+use App\Http\Middleware\IsAdminMiddleware;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function () {
@@ -12,6 +13,10 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('pasien', Ctrl\PasienController::class);
     Route::resource('pendaftaran', Ctrl\PendaftaranController::class);
+
+    Route::middleware(IsAdminMiddleware::class)->group(function() {
+        Route::resource('agama', Ctrl\AgamaController::class);
+    });
 });
 
 require __DIR__.'/auth.php';
