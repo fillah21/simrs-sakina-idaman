@@ -2,21 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\DataTables\JaminanDataTable;
-use App\Http\Requests\JaminanRequest;
-use App\Models\Jaminan;
+use App\DataTables\LayananDataTable;
+use App\Http\Requests\LayananRequest;
+use App\Models\Layanan;
 use Illuminate\Http\Request;
 
-class JaminanController extends Controller
+class LayananController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index(JaminanDataTable $dataTable)
+    public function index(LayananDataTable $dataTable)
     {
-        $title = "Jaminan";
+        $title = "Layanan";
 
-        return $dataTable->render('jaminan.index', compact('title'));
+        return $dataTable->render('layanan.index', compact('title'));
     }
 
     
@@ -25,18 +25,18 @@ class JaminanController extends Controller
      */
     public function create()
     {
-        $jaminan = new Jaminan();
+        $layanan = new Layanan();
 
-        return view('jaminan.form', compact('jaminan'));
+        return view('layanan.form', compact('layanan'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(JaminanRequest $request)
+    public function store(LayananRequest $request)
     {
         $data = $request->validated();
-        $data['kode_jaminan'] = generateKodeJaminan();
+        $data['kode_layanan'] = generateKodeLayanan();
 
         if($data['wajib_rujukan'] == "1") {
             $data['wajib_rujukan'] = true;
@@ -44,17 +44,11 @@ class JaminanController extends Controller
             $data['wajib_rujukan'] = false;
         }
 
-        if($data['wajib_keterangan_jaminan'] == "1") {
-            $data['wajib_keterangan_jaminan'] = true;
-        } else {
-            $data['wajib_keterangan_jaminan'] = false;
-        }
-
-        Jaminan::create($data);
+        Layanan::create($data);
 
         return response()->json([
             'status' => 'success',
-            'message' => 'Jaminan Berhasil Ditambahkan'
+            'message' => 'Layanan Berhasil Ditambahkan'
         ]);
     }
 
@@ -71,15 +65,15 @@ class JaminanController extends Controller
      */
     public function edit(string $id)
     {
-        $jaminan = Jaminan::find($id);
+        $layanan = Layanan::where('id', $id)->with(['instalasi'])->first();
 
-        return view('jaminan.form', compact('jaminan'));
+        return view('layanan.form', compact('layanan'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(JaminanRequest $request, string $id)
+    public function update(LayananRequest $request, string $id)
     {
         $data = $request->validated();
 
@@ -89,19 +83,13 @@ class JaminanController extends Controller
             $data['wajib_rujukan'] = false;
         }
 
-        if($data['wajib_keterangan_jaminan'] == "1") {
-            $data['wajib_keterangan_jaminan'] = true;
-        } else {
-            $data['wajib_keterangan_jaminan'] = false;
-        }
+        $layanan = Layanan::find($id);
 
-        $jaminan = Jaminan::find($id);
-
-        $jaminan->update($data);
+        $layanan->update($data);
 
         return response()->json([
             'status' => 'success',
-            'message' => 'Jaminan Berhasil Diedit'
+            'message' => 'Layanan Berhasil Diedit'
         ]);
     }
 
@@ -110,13 +98,13 @@ class JaminanController extends Controller
      */
     public function destroy(string $id)
     {
-        $jaminan = Jaminan::find($id);
+        $layanan = Layanan::find($id);
 
-        $jaminan->delete();
+        $layanan->delete();
 
         return response()->json([
             'status' => 'success',
-            'message' => 'Jaminan Berhasil Dihapus'
+            'message' => 'Layanan Berhasil Dihapus'
         ]);
     }
 }

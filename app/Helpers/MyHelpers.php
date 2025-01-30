@@ -119,6 +119,27 @@ use Illuminate\Support\Facades\Auth;
             return $prefix . $newNumber;
         }
     }
+    
+    if (!function_exists('generateKodeLayanan')) {
+        function generateKodeLayanan()
+        {
+            $last_data = Layanan::all()->last();
+
+            $prefix = "LYN";
+
+            if($last_data) {
+                $kode_last = $last_data->kode_layanan;
+    
+                $number = (int)str_replace($prefix, "",$kode_last);
+    
+                $newNumber = str_pad($number + 1, 3, '0', STR_PAD_LEFT);
+            } else {
+                $newNumber = "001";
+            }
+    
+            return $prefix . $newNumber;
+        }
+    }
 
     if (!function_exists('generateKodeInstalasi')) {
         function generateKodeInstalasi()
