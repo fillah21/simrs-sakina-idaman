@@ -10,7 +10,7 @@ class DashboardController extends Controller
     public function index()
     {
         $title = "Dashboard";
-        return view('layouts.master', compact('title'));
+        return view('dashboard.index', compact('title'));
     }
 
     public function testing()

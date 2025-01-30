@@ -318,3 +318,33 @@ const deletePendaftaran = (id) => {
         }
     });
 };
+
+const getDataPasienLama = (id) => {
+    $.ajax({
+        type: "POST",
+        url: baseUrl + "api/pasien-lama",
+        data: {
+            pasien_id: id,
+        },
+        dataType: "json",
+        headers: {
+            "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content"),
+        },
+        success: function (res) {
+            let id = res.id;
+            let text =
+                res.nama_pasien + " - " + res.nik + " - " + res.tanggal_lahir;
+
+            const select = $(`#pasien_id`);
+            const optionExists =
+                select.find(`option[value="${id}"]`).length > 0;
+
+            if (optionExists) {
+                select.val(id).trigger("change");
+            } else {
+                const option = new Option(text, id, true, true);
+                select.append(option).trigger("change");
+            }
+        },
+    });
+};

@@ -1,3 +1,12 @@
+const urlParams = new URLSearchParams(window.location.search);
+const pasienBaru = urlParams.get("pasien_baru");
+
+if (pasienBaru == "true") {
+    setTimeout(() => {
+        $("#buttonTambahPasien").click();
+    }, 1500);
+}
+
 $("#buttonTambahPasien").click(function () {
     $("#showModalPasien").click();
     $("#modal-header").addClass("hidden").removeClass("flex");
