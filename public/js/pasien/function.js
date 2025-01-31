@@ -175,20 +175,35 @@ const initAllSelect2Pasien = () => {
     reinitializedSelect2OnChange("#kabupaten_id", initKecamatanSelect2);
     reinitializedSelect2OnChange("#kecamatan_id", initKelurahanSelect2);
 
-    $("#provinsi_id").change(function () {
+    $("#provinsi_id").on("select2:select", function () {
         $("#kabupaten_id").val(null).trigger("change");
         $("#kecamatan_id").val(null).trigger("change");
         $("#kelurahan_id").val(null).trigger("change");
     });
 
-    // $("#kabupaten_id").change(function () {
-    //     $("#kecamatan_id").val(null).trigger("change");
-    //     $("#kelurahan_id").val(null).trigger("change");
-    // });
+    $("#provinsi_id").on("select2:clear", function () {
+        $("#kabupaten_id").val(null).trigger("change");
+        $("#kecamatan_id").val(null).trigger("change");
+        $("#kelurahan_id").val(null).trigger("change");
+    });
 
-    // $("#kecamatan_id").change(function () {
-    //     $("#kecamatan_id").val(null).trigger("change");
-    // });
+    $("#kabupaten_id").on("select2:select", function () {
+        $("#kecamatan_id").val(null).trigger("change");
+        $("#kelurahan_id").val(null).trigger("change");
+    });
+
+    $("#kabupaten_id").on("select2:clear", function () {
+        $("#kecamatan_id").val(null).trigger("change");
+        $("#kelurahan_id").val(null).trigger("change");
+    });
+
+    $("#kecamatan_id").on("select2:select", function () {
+        $("#kelurahan_id").val(null).trigger("change");
+    });
+
+    $("#kecamatan_id").on("select2:clear", function () {
+        $("#kelurahan_id").val(null).trigger("change");
+    });
 };
 
 const submitPasien = () => {
