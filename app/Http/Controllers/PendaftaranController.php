@@ -39,8 +39,11 @@ class PendaftaranController extends Controller
         $data = $request->validated();
 
         $data['no_pendaftaran'] = generateNoPendaftaran();
-        $data['waktu_kunjungan'] = Carbon::createFromFormat('d/m/Y H:i', $data['waktu_kunjungan'])->format('Y-m-d H:i:s');
+        $waktu_kunjungan = Carbon::createFromFormat('d/m/Y H:i', $data['waktu_kunjungan'])->format('Y-m-d H:i:s');
+
         $data['antrian'] = generateNoAntrian($data['layanan_id'], $data['waktu_kunjungan']);
+        
+        $data['waktu_kunjungan'] = $waktu_kunjungan;
 
         Pendaftaran::create($data);
 

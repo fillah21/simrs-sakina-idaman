@@ -27,8 +27,8 @@ class PendaftaranDataTable extends DataTable
                 ->addIndexColumn()
                 ->editColumn('aksi', function($row){
                     return '<div class="flex space-x-2">
-                                <a data-id="'.$row->id.'" data-jenis="edit" 
-                                    href="/pendaftaran/'. $row->id .'/edit"
+                                <a data-id="'.$row->pendaftaran_id.'" data-jenis="edit" 
+                                    href="/pendaftaran/'. $row->pendaftaran_id .'/edit"
                                     class="text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 
                                     font-medium rounded-lg text-sm px-3 py-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
@@ -36,7 +36,7 @@ class PendaftaranDataTable extends DataTable
                                     </svg>
                                 </a>
                 
-                                <button data-jenis="delete" type="button" data-id="'.$row->id.'" 
+                                <button data-jenis="delete" type="button" data-id="'.$row->pendaftaran_id.'" 
                                     class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:ring-red-300 
                                     font-medium rounded-lg text-sm px-3 py-2 action">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
@@ -87,8 +87,9 @@ class PendaftaranDataTable extends DataTable
     {
         return $model->newQuery()
             ->with(['pasien', 'instalasi', 'layanan', 'dokter', 'jaminan'])
-            ->selectRaw("*, DATE_FORMAT(waktu_kunjungan, '%d/%m/%Y %H:%i') as waktu_kunjungan");
+            ->selectRaw("pendaftarans.id as pendaftaran_id, pendaftarans.*, DATE_FORMAT(waktu_kunjungan, '%d/%m/%Y %H:%i') as waktu_kunjungan");
     }
+
 
 
     /**
